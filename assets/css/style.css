@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #f5f5f5;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Menu Mobile*/
+
+#menu_mobile {
+    background-color: #ffffff;
+    width: 100%;
+    min-height: 15%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 0;
+    border-top: 1px solid rgba(26, 26, 26, 0.1);
+}
+
+ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    height: auto;
+    cursor: pointer;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+a img {
+    width: 25px;
+}
+
+/* Saudação */
+
+#saudacao {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+    background-color: #ffffff;
+}
+
+#saudacao h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 22px;
+}
+
+#saudacao h1 span {
+    font-weight: 700;
+}
+
+/* Classes de energia*/
+
+#classes_de_energia {
+    width: 100%;
+    min-height: 150px;
+    padding: 40px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+#classes_de_energia header,
+#tarefas_prioritarias header {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#classes_de_energia header h2,
+#tarefas_prioritarias header .titulo {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#classes_de_energia .classes {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    max-width: 100%;
+}
+
+#classes_de_energia .classes::-webkit-scrollbar {
+    display: none;
+}
+
+#classes_de_energia .classe {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-right: 10px;
+    width: 180px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+#classes_de_energia .classe header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#classes_de_energia .classe .point {
+    content: '';
+    background-color: #262626;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}
+
+.borda {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.borda span {
+    content: '';
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#tarefas_prioritarias header {
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 40px 0 40px;
+}
+
+#tarefas_prioritarias .cards {
+    width: 100%;
+    padding: 0 40px 40px 40px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+}
+
+#tarefas_prioritarias .cards .card {
+    background-color: #ffffff;
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#tarefas_prioritarias .cards .card .informacoes {
+    width: 100%;
+}
+
+#tarefas_prioritarias .cards .card .nome_tarefa {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+#tarefas_prioritarias .cards .card .informacoes .classe_tarefa {
+    font-size: 10px;
+    font-weight: 300;
+    background-color: #262626;
+    border-radius: 50px;
+    text-align: center;
+    padding: 2px 2px;
+    color: #ffffff;
+    width: 80px;
+}
+
+#tarefas_prioritarias .cards .card .input {
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+#tarefas_prioritarias .cards .card .nome_tarefa {
+    width: 80%;
+}
+
+#tarefas_prioritarias .cards .card .botao_fechar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+}
+
+/* Bloco de saldo */
+
+#bloco_saldo {
+    width: 100%;
+    height: 150px;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bloco_saldo .bloco {
+    background-color: #ffffff;
+    width: 100%;
+    height: 180px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(26, 26, 26, 0.1);
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#bloco_saldo header {
+    width: 100%;
+    font-size: 18px;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    font-weight: 500;
+}
+
+#bloco_saldo header .titulo {
+    margin-bottom: 8px;
+}
+
+#bloco_saldo header .titulo h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#bloco_saldo .quantidade_tarefas span {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#bloco_saldo .quantidade_tarefas {
+    font-size: 20px;
+    font-weight: 300;
+}
