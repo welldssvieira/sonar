@@ -12,9 +12,11 @@ html {
     font-optical-sizing: auto;
 }
 
+/*
 body{
     overflow: hidden;
 }
+*/
 
 /* Menu Mobile*/
 
@@ -292,4 +294,5 @@ a img {
 #bloco_saldo .quantidade_tarefas {
     font-size: 20px;
     font-weight: 300;
+
 }
